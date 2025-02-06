@@ -138,26 +138,25 @@ footer {
 /* Styling for the home section */
 .home-section {
     text-align: center;
-    padding: 100px 20px; /* Add padding around the content */
+    padding: 100px 20px; 
 }
 
 .home-image-container {
-    margin-top: 30px; /* Space between the text and image */
+    margin-top: 30px; 
     text-align: center;
 }
 
 .home-image {
-    max-width: 100%; /* Make the image responsive */
-    height: auto; /* Keep the aspect ratio of the image */
-    border-radius: 10px; /* Round the corners of the image */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
-    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .home-image:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transform: scale(1.05); 
 }
-
 /* Social Media Links */
 .social-links {
     margin-top: 20px;
@@ -165,9 +164,9 @@ footer {
 }
 
 .social-links a {
-    color: #00bcd4; /* Link color */
+    color: #00bcd4; 
     text-decoration: none;
-    font-size: 1.5rem; /* Make the font larger for the icons */
+    font-size: 1.5rem; 
     margin: 0 15px;
     display: inline-flex;
     align-items: center;
@@ -175,13 +174,13 @@ footer {
 }
 
 .social-links a:hover {
-    color: #ff4081; /* Hover effect */
+    color: #ff4081; 
 }
 
 /* Style for icons */
 .social-links i {
-    margin-right: 8px; /* Space between icon and text */
-    font-size: 1.8rem; /* Increase icon size */
+    margin-right: 8px; 
+    font-size: 1.8rem; 
 }
 
 #contact {
@@ -189,9 +188,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh; /* Adjust height as needed */
+    height: 50vh; 
     text-align: center;
-    color: white; /* Ensures visibility against dark background */
+    color: white; 
 }
 
 #contact h2 {
@@ -203,10 +202,56 @@ footer {
 }
 
 #contact a {
-    color: #4db8ff; /* Adjust link color if needed */
+    color: #4db8ff; 
     text-decoration: none;
 }
 
 #contact a:hover {
     text-decoration: underline;
+}
+
+/* Base styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-menu li {
+    margin: 0 10px;
+}
+
+/* Hamburger button - hidden by default */
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-menu.active {
+        display: flex;
+    }
+    #nav-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
 }
